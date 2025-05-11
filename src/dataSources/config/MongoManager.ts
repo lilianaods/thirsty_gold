@@ -17,4 +17,12 @@ export class MongoManager {
       this.client = await MongoClient.connect(url);
     }
   }
+
+  public getCollection(name: string) {
+    if (!this.client) {
+      throw new Error("MongoDB client is not connected");
+    }
+    const db = this.client.db();
+    return db.collection(name);
+  }
 }
