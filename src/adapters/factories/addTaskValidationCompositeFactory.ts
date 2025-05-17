@@ -1,5 +1,5 @@
 import { DateValidatorAdapter } from "../dateValidatorAdapter";
-import { Validation } from "../interfaces/validation";
+import { Validation } from "../interfaces";
 import { DateValidation } from "../validations/dateValidation";
 import { RequiredFieldsValidation } from "../validations/requiredFieldsValidation";
 import { ValidationComposite } from "../validations/validationComposite";

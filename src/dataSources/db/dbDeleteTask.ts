@@ -1,5 +1,8 @@
-import { DeleteTask, DeleteTaskModel } from "../../usecases/deleteTask";
-import { DeleteTaskRepository } from "../../usecases/repository/deleteTaskRepository";
+import {
+  DeleteTask,
+  DeleteTaskModel,
+  DeleteTaskRepository,
+} from "../../usecases";
 
 export class DbDeleteTask implements DeleteTask {
   constructor(private readonly deleteTaskRepository: DeleteTaskRepository) {}

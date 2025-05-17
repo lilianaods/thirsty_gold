@@ -1,11 +1,12 @@
 import { ObjectId } from "mongodb";
-import { InvalidParamError } from "../../../adapters/presentations/api/errors/invalid-param-error";
-import { NotFoundError } from "../../../adapters/presentations/api/errors/not-found-error";
+import { InvalidParamError, NotFoundError } from "../../../adapters/presentations/api/errors";
 import { Task } from "../../../entities/task";
-import { AddATaskModel } from "../../../usecases/addTask";
-import { DeleteTaskModel } from "../../../usecases/deleteTask";
-import { AddTaskRepository } from "../../../usecases/repository/addTaskRepository";
-import { DeleteTaskRepository } from "../../../usecases/repository/deleteTaskRepository";
+import {
+  AddATaskModel,
+  AddTaskRepository,
+  DeleteTaskModel,
+  DeleteTaskRepository,
+} from "../../../usecases";
 import { MongoManager } from "../../config/MongoManager";
 
 export class TaskMongoRepository

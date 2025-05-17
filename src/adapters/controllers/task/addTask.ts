@@ -1,7 +1,10 @@
-import { AddTask } from "../../../usecases/addTask";
-import { Controller } from "../../interfaces/controller";
-import { HttpRequest, HttpResponse } from "../../interfaces/http";
-import { Validation } from "../../interfaces/validation";
+import { AddTask } from "../../../usecases";
+import {
+  Controller,
+  HttpRequest,
+  HttpResponse,
+  Validation,
+} from "../../interfaces";
 import {
   badRequest,
   created,

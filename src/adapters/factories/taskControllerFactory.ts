@@ -1,6 +1,8 @@
-import { DbAddTask } from "../../dataSources/db/dbAddTask";
-import { LogErrorMongoRepository } from "../../dataSources/db/repository/logErrorMongoRepository";
-import { TaskMongoRepository } from "../../dataSources/db/repository/taskMongoRepository";
+import {
+  DbAddTask,
+  LogErrorMongoRepository,
+  TaskMongoRepository,
+} from "../../dataSources";
 import { AddTaskController } from "../controllers/task/addTask";
 import { LogErrorControllerDecorator } from "../decorators/logErrorControllerDecorator";
 import { addTaskValidationCompositeFactory } from "./addTaskValidationCompositeFactory";

@@ -1,6 +1,5 @@
 import { Task } from "../../entities/task";
-import { AddATaskModel, AddTask } from "../../usecases/addTask";
-import { AddTaskRepository } from "../../usecases/repository/addTaskRepository";
+import { AddATaskModel, AddTask, AddTaskRepository } from "../../usecases";
 
 export class DbAddTask implements AddTask {
   constructor(private readonly addTaskRepository: AddTaskRepository) {}

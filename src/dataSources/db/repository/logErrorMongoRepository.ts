@@ -1,4 +1,4 @@
-import { LogErrorRepository } from "../../../usecases/repository/logErrorRepository";
+import { LogErrorRepository } from "../../../usecases";
 import { MongoManager } from "../../config/MongoManager";
 
 export class LogErrorMongoRepository implements LogErrorRepository {

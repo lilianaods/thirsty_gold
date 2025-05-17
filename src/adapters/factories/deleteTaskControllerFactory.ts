@@ -1,6 +1,8 @@
-import { DbDeleteTask } from "../../dataSources/db/dbDeleteTask";
-import { LogErrorMongoRepository } from "../../dataSources/db/repository/logErrorMongoRepository";
-import { TaskMongoRepository } from "../../dataSources/db/repository/taskMongoRepository";
+import {
+  DbDeleteTask,
+  LogErrorMongoRepository,
+  TaskMongoRepository,
+} from "../../dataSources";
 import { DeleteTaskController } from "../controllers/task/deleteTask";
 import { LogErrorControllerDecorator } from "../decorators/logErrorControllerDecorator";
 import { RequiredFieldsValidation } from "../validations/requiredFieldsValidation";
